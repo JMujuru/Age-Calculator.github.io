@@ -1,0 +1,229 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (inputs): 32px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400i, 700, 800i
+
+ */
+
+/* Universal/body/main */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.main {
+  background-color: hsl(0, 0%, 100%);
+  width: 375px;
+  height: 500px;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 5.5rem;
+  padding: 2rem 1.4rem 3rem;
+}
+
+/* <!-- Dates Section --> */
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.cal {
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+
+
+.input {
+  width: 6.2rem;
+  height: 3.8rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(0, 0%, 86%);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 0.4rem;
+  transition: all 0.3s;
+}
+
+.input:hover,
+.input:focus {
+  border-color: hsl(259, 100%, 65%);
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+/*     <!-- Divider --> */
+.divider {
+  position: relative;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.divider img {
+  position: absolute;
+  width: 4rem;
+  padding: 1.1rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(259, 100%, 65%);
+}
+
+.divider img:hover {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+.divider img:active {
+  background-color: hsla(0, 0%, 8%, 0.637);
+  cursor: pointer;
+}
+
+/* <!-- Calculated Years --> */
+
+.ages-style {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  margin: 0;
+}
+.ages-style1 {
+  color: hsl(259, 100%, 65%);
+}
+
+/* <------------------------------------Footer-----------------------------> */
+.reset {
+  color: hsl(259, 100%, 65%);
+  font-size: 1.5rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 0rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* <------------------------------------For the JS-----------------------------> */
+
+.required {
+  color: hsl(0, 100%, 67%);
+  font-size: 0.6rem;
+  font-style: italic;
+}
+
+/* <------------------------------------Media-----------------------------> */
+
+@media all and (min-width: 800px) {
+  /* Universal/body/main */
+
+  .main {
+    background-color: hsl(0, 0%, 100%);
+    width: 700px;
+    height: 500px;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 8rem;
+    padding: 2rem 3rem 3rem 3em;
+  }
+
+  /* <!-- Dates Section --> */
+
+  .main-top {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2.6rem;
+  }
+
+  .main-top div input {
+    width: 8.5rem;
+    height: 3.5rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    padding: 0.8rem;
+  }
+
+  .dts-1 {
+    margin-right: 1.8rem;
+  }
+  .dts-2 {
+    margin-right: 1.8rem;
+  }
+
+ 
+
+  /*     <!-- Divider --> */
+  .divider {
+    position: relative;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+  }
+
+  .divider img {
+    position: absolute;
+    width: 5rem;
+    padding: 1.1rem;
+    border-radius: 50%;
+    left: 36rem;
+    background-color: hsl(259, 100%, 65%);
+  }
+
+  /* <!-- Calculated Years --> */
+
+  .ages-style {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+  }
+}
